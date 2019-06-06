@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 
+Name: Ronnel Palencia
+Date Created: 06/06/19
+Last revision:  
+-->
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+</head>
+
+<body>
+	<header style="text-align: center;">
+		<h1>La Paz Eatery</h1>
+	</header>
+
+	<nav>
+		<hr>
+		<a href="index.html">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="contact.html">Menu</a>
+		<hr>
+	</nav>
+
+	<section style="text-align: center;">
+		<form action="submit.html" method="POST">
+			<label for="name">Name: </label>
+			<input type="text" id="name" name="name"><br /><br />
+			<label for="email">Email: </label>
+			<input type="email" id="email" name="email"><br /><br />
+			<label for="phone">Phone: </label>
+			<input type="text" id="email" name="email"><br /><br />
+
+			<label for="inquiry">Reason for Inquiry: </label>
+			<select id="contact" name="contact">
+				<option>Catering</option>
+				<option>Private Party</option>
+				<option>Feedback</option>
+				<option active>Other</option>
+			</select><br/><br />
+
+			<label for="info">Additional Information: </label>
+			<textarea id="info" name="info"></textarea><br /><br />
+
+			<label for="detail">Have you been to the restaurant?</label>
+			<input type="radio" id="choice1" name="questionnaire" value="yes">
+			<label for="choice1">Yes</label>
+			<input type="radio" id="choice2" name="questionnaire" value="no">
+			<label for="choice2">No</label><br /><br />
+
+			<label for="days">Best days to contact you: </label>
+			<input type="checkbox" id="M"  name="days" value="M">
+			<label for="M">M</label>
+			<input type="checkbox" id="T"  name="days" value="T">
+			<label for="T">T</label>
+			<input type="checkbox" id="W"  name="days" value="W">
+			<label for="W">W</label>
+			<input type="checkbox" id="Th"  name="days" value="Th">
+			<label type="Th">Th</label>
+			<input type="checkbox" id="F"  name="days" value="F">
+			<label type="F">F</label><br /><br />
+
+			<input type="submit" name="submit" value="Send Request">
+		</form>
+	</section>
+
+	<footer style="text-align: center;">
+		<hr>
+		<p>1111 Domain Dr, Dallas, Texas, 75001</p>
+		<p>(972) 123-4567</p>
+	</footer>
+
+</body>
+</html>
