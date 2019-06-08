@@ -1,0 +1,45 @@
+body {
+    margin: 0 auto;
+    max-width: 900px
+}
+
+header, footer, nav {
+	text-align: center;
+	width: 100%;
+}
+
+.clear-float {
+	clear: both;
+}
+
+nav a {  
+	display: block;
+	margin: 10px;
+	width: 80px;
+	float: left;
+}
+
+nav {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+header {
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+	border-top: solid 1px;
+}
+
+nav a:visited {
+	color: red;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+nav a:active {
+	text-decoration: none;
+}

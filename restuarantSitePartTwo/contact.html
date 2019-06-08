@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- 
+Name: Ronnel Palencia
+Date Created: 06/06/19
+Last revision: 06/07/19
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Contact Us</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+	<style type="text/css">
+
+		section {
+			text-align: center;
+		}
+
+		nav {
+			margin-bottom: 20px;
+		}
+
+		form {
+			font-size: 1.2em;
+		}
+
+		.required {
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>La Paz Eatery</h1>
+	</header>
+
+		<nav>
+		<p><a href="index.html">Home</a></p>
+		<p><a href="menu.html">Menu</a></p>
+		<p><a href="contact.html">Contact Us</a></p>
+		<div class="clear-float"></div>
+		</nav>
+
+	<section>
+		<form action="submit.html" method="POST">
+			<label class="required" for="name">Name: </label>
+			<input type="text" id="name" name="name" required><br /><br />
+			<label class="required" for="email">Email: </label>
+			<input type="email" id="email" name="email" required><br /><br />
+			<label class="required" for="phone">Phone: </label>
+			<input type="text" id="email" name="email" required><br /><br />
+
+			<label for="inquiry">Reason for Inquiry: </label>
+			<select id="contact" name="contact">
+				<option>Catering</option>
+				<option>Private Party</option>
+				<option>Feedback</option>
+				<option active>Other</option>
+			</select><br/><br />
+
+			<label for="info">Additional Information: </label>
+			<textarea id="info" name="info"></textarea><br /><br />
+
+			<label for="detail">Have you been to the restaurant?</label>
+			<input type="radio" id="choice1" name="questionnaire" value="yes">
+			<label for="choice1">Yes</label>
+			<input type="radio" id="choice2" name="questionnaire" value="no">
+			<label for="choice2">No</label><br /><br />
+
+			<label for="days">Best days to contact you: </label>
+			<input type="checkbox" id="M"  name="days" value="M">
+			<label for="M">M</label>
+			<input type="checkbox" id="T"  name="days" value="T">
+			<label for="T">T</label>
+			<input type="checkbox" id="W"  name="days" value="W">
+			<label for="W">W</label>
+			<input type="checkbox" id="Th"  name="days" value="Th">
+			<label type="Th">Th</label>
+			<input type="checkbox" id="F"  name="days" value="F">
+			<label type="F">F</label><br /><br />
+
+			<input type="submit" name="submit" value="Send Request">
+		</form>
+	</section>
+
+	<footer>
+		<p>1111 Domain Dr, Dallas, Texas, 75001</p>
+		<p>(972) 123-4567</p>
+	</footer>
+
+</body>
+</html>
