@@ -2,7 +2,7 @@
 <!-- 
 Name: Ronnel Palencia
 Date Created: 06/06/19
-Last revision: 06/09/19
+Last revision: 06/07/19
   -->
 <html lang="en">
 
@@ -10,6 +10,8 @@ Last revision: 06/09/19
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Menu</title>
+	<script src="https://kit.fontawesome.com/970805cd4e.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
 	<style type="text/css">
@@ -56,16 +58,49 @@ Last revision: 06/09/19
 			</noscript>
 	</header>
 
-		<nav>
-		<p><a href="index.html">Home</a></p>
-		<p><a href="menu.html">Menu</a></p>
-		<p><a href="contact.html">Contact Us</a></p>
-		<div class="clear-float"></div>
-		</nav>
+		<ul class="nav">
+  <li class="nav-item col-sm-2">
+    <a class="nav-link active btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
+  </li>
+  <li class="nav-item col-sm-2">
+    <a class="nav-link btn badge-pill" href="menu.html">Menu</a>
+  </li>
+  <li class="nav-item col-sm-2">
+    <a class="nav-link btn badge-pill" href="contact.html">Contact Us</a>
+  </li>
+</ul>
 
-	<section>
-		<article>
-		<table width="90%">
+	<section class="container-fluid">
+		<article class="row">
+		<div class="col-md-4 leftSide">
+				<h2>Chicken Satay Bowl</h2>
+						<p>Chicken satay mixed with cilantro, beans, rice, pico de gallo, and topped off with gaucamole.</p>
+						<h6>14.95</h6>
+					<h3>Pad Thai Quesadilla</h3>
+						<p>Quesadilla filled with Beef Pad Thai. The noodles and beef is a perfect combination of flavors.</p>
+						<h6>15.99</h6>
+			</div>	
+
+			<div class="col-md-4 middleSide">
+				<h2>Longanisa BBQ Burrito</h2>
+						<p>Philippine's cuisine Longanisa lathered with Texas BBQ Sauce served with portion of rice on steamed banana leaves.</p>
+						<h6>18.99</h6>
+					<h3>Poblano Stir Fry</h3>
+						<p>Fish stir fried with vegetables with poblano pepper aroma. This dish is served with either fried rice or steamed rice.</p>
+						<h6>13.99</h6>
+			</div>	
+
+			<div class="col-md-4 rightSide">
+				<h2>Jalepeno Cheese Noodles</h2>
+					<h3>Basic Breakfast</h3>
+						<p>Chicken satay mixed with cilantro, beans, rice, pico de gallo, and topped off with gaucamole.</p>
+						<h6>12.99</h6>
+					<h3>Cilantro Fish Curry</h3>
+						<p>This is an alternative to beef curry. Fish curry is exquisite in that the flaky fish makes a good combination with curry flavor and the cilantro enhances the aroma.</p>
+						<h6>17.99</h6>
+			</div>	
+			<!-- TABLE MENU STYLE ============================-->
+		<!-- <table width="90%">
 			<thead>
 			<tr>
 				<th>Chicken Satay Bowl</th>
@@ -109,10 +144,11 @@ Last revision: 06/09/19
 				</td>
 			</tr>
 			</tbody>
-		</table>
+		</table> -->
+		<!-- ===================================================== -->
 		</article>
 
-		<article id="beverages">
+	<article id="beverages" class="col-md-12">
 			<table>
 				<thead>
 					<tr>
@@ -140,6 +176,7 @@ Last revision: 06/09/19
 				</tbody>
 			</table>
 		</article>
+
 	
 	</section>
 
@@ -147,6 +184,8 @@ Last revision: 06/09/19
 		<p>1111 Domain Dr, Dallas, Texas, 75001</p>
 		<p>(972) 123-4567</p>
 	</footer>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- 
+Name: Ronnel Palencia
+Date Created: 06/06/19
+Last revision: 06/09/19
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Contact Us</title>
+	<script src="https://kit.fontawesome.com/970805cd4e.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+	<style type="text/css">
+
+		section {
+			text-align: center;
+		}
+
+		nav {
+			margin-bottom: 20px;
+		}
+
+		form {
+			font-size: 1.2em;
+		}
+
+		#appSummary {
+			justify-content: center;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+	</style>
+
+<script type = "text/javascript">
+   	function validateItems() {
+    var num1 = document.forms["numberFun"]["Name"].value;
+    var num2 = document.forms["numberFun"]["Phone"].value;
+    if (num1 == "" || Number(num1)) {
+        alert("Name must be a text.");
+        document.forms["numberFun"]["num1"]
+           .parentElement.className = "form-group has-error";
+        document.forms["numberFun"]["num1"].focus();
+        return false;
+    }
+   if (num2 == "" || isNaN(num2)) {
+       alert("Phone must be filled in with a number.");
+       document.forms["numberFun"]["num2"]
+          .parentElement.className = "form-group has-error"
+       document.forms["numberFun"]["num2"].focus();
+       return false;
+   }
+   document.getElementById("results").style.display = "block";
+   return false;
+}
+
+</script>
+
+</head>
+
+<body>
+	<header>
+		<h1>La Paz Eatery</h1>
+		<noscript>
+				<p style="color: red">Your browser does not support JavaScript or it is disabled. This site is best viewed with JavaScript enabled.</p>
+			</noscript>
+	</header>
+<!-- NAVBAR ======================= -->
+		<ul class="nav">
+  <li class="nav-item col-sm-2">
+    <a class="nav-link active btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
+  </li>
+  <li class="nav-item col-sm-2">
+    <a class="nav-link btn badge-pill" href="menu.html">Menu</a>
+  </li>
+  <li class="nav-item col-sm-2">
+    <a class="nav-link btn badge-pill" href="contact.html">Contact Us</a>
+  </li>
+</ul>
+
+<!-- NAVBAR ======================= -->
+
+	<section>
+<!-- NAME EMAIL PHONE FORM -->
+		<form name="numberFun" onsubmit="return validateItems();" >
+  <div class="form-group row text-center" id="appSummary">
+    <label class="bold" for="name" class="col-sm-2 col-form-label req" required>Name: </label>
+    <div>
+      <input type="text" class="form-control mx-sm-2" id="Name">
+    </div>
+  </div>
+
+  <div class="form-group row text-center" id="appSummary">
+    <label for="email" class="col-sm-1 col-form-label req">Email: </label>
+    <div>
+      <input type="email" class="form-control mx-sm-2" name="EMail" id="email">
+    </div>
+  </div>
+
+  <div class="form-group row text-center" id="appSummary">
+    <label class="bold" for="name" class="col-sm-2 col-form-label req">Phone: </label>
+    <div>
+      <input type="text" class="form-control mx-sm-2" name="Phone" id="phone" required>
+    </div>
+  </div>
+  <!-- NAME EMAIL PHONE FORM -->
+
+<!-- SELECT OPTION -->
+   <div class="form-group row text-center" id="appSummary">
+    <label for="email" class="col-3 col-form-label">Reason for Inquiry: </label>
+    <div class="col-2">
+      <select type="email" class="form-control mx-sm-2">
+      <option selected>Choose...</option>
+        <option value="1">Catering</option>
+        <option value="2">Private Party</option>
+        <option value="3">Feedback</option>
+        <option value="4">Other</option>
+    </select>
+    </div>
+  </div>
+  <!-- SELECT OPTION -->
+
+  <!-- TEXT AREA -->
+  <div class="form-group row text-center" id="appSummary">
+    <label for="info" class="control-label col-md-3">Additional Information:</label>
+				<div class="col-md-3">						
+		<textarea class="form-control" id="info"></textarea>
+		</div>
+  </div>
+  <!-- TEXT AREA -->
+
+  <!-- RADIO BUTTONS -->
+<div class="form-group row text-center" id="appSummary">
+    <label for="prevVisit" class="control-label col-sm-3">Have you been to the restaurant?</label>
+			<div class="col-sm-3">
+				<input type="radio" id="choice1" name="prevVisit" value="yes">
+				<label for="prevVisit">Yes</label>
+		
+				<input type="radio" id="choice2" name="prevVisit" value="no" checked>
+				<label for="prevVisit">No</label>										
+			</div>
+  </div>
+<!-- RADIO BUTTONS -->
+
+<!-- CHECKBOX -->
+<div class="form-group row text-center" id="appSummary">
+    <label for="contactDay" class="control-label col-sm-2-2">Best days to contact you:</label>
+						
+							<div class="checkbox-inline col-sm-1">
+								<input type="checkbox" id="mondayCheck" name="contactDay" value="monday">
+								<label for="mondayCheck">M</label>
+							</div>
+							<div class="checkbox-inline col-sm-1">
+								<input type="checkbox" id="tuesdayCheck" name="contactDay" value="tuesday">
+								<label for="tuesdayCheck">T</label>
+							</div>
+							<div class="checkbox-inline col-sm-1">						
+								<input type="checkbox" id="wednesdayCheck" name="contactDay" value="wednesday">
+								<label for="wednesdayCheck">W</label>
+							</div>
+							<div class="checkbox-inline col-sm-1">
+								<input type="checkbox" id="thursdayCheck" name="contactDay" value="thursday">
+								<label for="thursdayCheck">Th</label>
+							</div>
+							<div class="checkbox-inline col-sm-1">
+								<input type="checkbox" id="fridayCheck" name="contactDay" value="friday">
+								<label for="fridayCheck">F</label>
+						</div>
+  </div>
+<!-- CHECKBOX -->
+
+<!-- SUBMIT BUTTON  -->
+<div class="form-group row text-center" id="appSummary">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Send Request</button>
+    </div>
+  </div>
+<!-- SUBMIT BUTTON  -->
+
+<!-- HIDDEN MESSAGE -->
+<div id="results" class="table table-striped" style="display:none; border: dashed 1px;">
+        
+          <p>Information is valid. Message Sent!</p>  
+    </div>
+<!-- HIDDEN MESSAGE -->
+</form>
+
+		<!-- HTML5 FORM =============================================== -->
+		<!-- <form action="submit.html" method="POST">
+			<label class="required" for="name">Name: </label>
+			<input type="text" id="name" name="name" required><br /><br />
+			<label class="required" for="email">Email: </label>
+			<input type="email" id="email" name="email" required><br /><br />
+			<label class="required" for="phone">Phone: </label>
+			<input type="text" id="email" name="email" required><br /><br />
+
+			<label for="inquiry">Reason for Inquiry: </label>
+			<select id="contact" name="contact">
+				<option>Catering</option>
+				<option>Private Party</option>
+				<option>Feedback</option>
+				<option active>Other</option>
+			</select><br/><br />
+
+			<label for="info">Additional Information: </label>
+			<textarea id="info" name="info"></textarea><br /><br />
+
+			<label for="detail">Have you been to the restaurant?</label>
+			<input type="radio" id="choice1" name="questionnaire" value="yes">
+			<label for="choice1">Yes</label>
+			<input type="radio" id="choice2" name="questionnaire" value="no">
+			<label for="choice2">No</label><br /><br />
+
+			<label for="days">Best days to contact you: </label>
+			<input type="checkbox" id="M"  name="days" value="M">
+			<label for="M">M</label>
+			<input type="checkbox" id="T"  name="days" value="T">
+			<label for="T">T</label>
+			<input type="checkbox" id="W"  name="days" value="W">
+			<label for="W">W</label>
+			<input type="checkbox" id="Th"  name="days" value="Th">
+			<label type="Th">Th</label>
+			<input type="checkbox" id="F"  name="days" value="F">
+			<label type="F">F</label><br /><br />
+
+			<input type="submit" name="submit" value="Send Request">
+		</form> -->
+		<!-- HTML5 FORM =============================================== -->
+	</section>
+
+	<footer>
+		<p>1111 Domain Dr, Dallas, Texas, 75001</p>
+		<p>(972) 123-4567</p>
+	</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

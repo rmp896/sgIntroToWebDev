@@ -1,0 +1,50 @@
+body {
+    margin: 0 auto;
+    max-width: 900px
+}
+
+header, footer, nav {
+	text-align: center;
+	width: 100%;
+}
+
+.clear-float {
+	clear: both;
+}
+
+nav a {  
+	display: block;
+	float: left;
+}
+
+ul li a {
+			background-color: #707471;
+			color: #fef9ff;
+		}
+
+.nav {
+		    border-top: thin #5b7d87 solid;
+		    border-bottom: thin #5b7d87 solid;
+		    padding-top: 12px;
+		    padding-bottom: 12px;
+			}
+
+header {
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+	border-top: solid 1px;
+}
+
+ul li a:visited {
+	color: red;
+}
+
+ul li a:hover {
+	font-weight: bold;
+}
+
+ul li a:active {
+	text-decoration: none;
+}
